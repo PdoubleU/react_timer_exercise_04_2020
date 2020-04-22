@@ -1,25 +1,28 @@
+$background-color: #575fcf;
+$main-color: #3c40c6;
+$font-main: white;
+$font-second: grey;
+
 :root {
   box-sizing: border-box;
   font-size: calc(1em + 1vw);
   line-height: 1.2;
 }
-
 *,
 ::before,
 ::after {
   box-sizing: inherit;
 }
-
 body {
   margin: 0;
   padding: 0;
-  background-color: #575fcf;
-  color: white;
+  background-color: $background-color;
+  color: $font-main;
 }
-
-.timer {
+.timer{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
+

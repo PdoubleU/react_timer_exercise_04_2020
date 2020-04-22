@@ -1,0 +1,1 @@
+:root{box-sizing:border-box;font-size:calc(1em + 1vw);line-height:1.2}*,::before,::after{box-sizing:inherit}body{margin:0;padding:0;background-color:#575fcf;color:#fff}.timer{position:absolute;top:50%;left:50%;transform:translateX(-50%) translateY(-50%)}

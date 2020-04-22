@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import PomodoroClock from './PomodoroClock';
+import ReactFCCtest from 'react-fcctest';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <PomodoroClock/>
+    <ReactFCCtest/>
   </React.StrictMode>,
   document.getElementById('root')
 );
