@@ -6,18 +6,24 @@ export default class LengthControler extends React.Component{
     render(){
         return (
             <div className="length-control">
-                <div id={this.props.idTitle}>{this.props.title}</div>
-                <button id={this.props.decrementId}
-                    className="control-btn"
-                    value='-'
-                    onClick={this.props.onClick}>
-                </button><FontAwesomeIcon icon={faArrowAltCircleLeft} className="icon"/>
-                <div id={this.props.idLength}>{this.props.length}</div>
-                <button id={this.props.incrementId}
+                <div id={this.props.idTitle}
+                    className="control-title">{this.props.title}</div>
+                <span className="control-container">
+                    <button id={this.props.decrementId}
                         className="control-btn"
-                        value='+'
+                        value='-'
                         onClick={this.props.onClick}>
-                </button><FontAwesomeIcon icon={faArrowAltCircleRight} className="icon"/>
+                    <FontAwesomeIcon icon={faArrowAltCircleLeft} className="icon" />
+                    </button>
+                    <div id={this.props.idLength} style={{margin: '0'}}>{this.props.length}</div>
+                    <button id={this.props.incrementId}
+                            className="control-btn"
+                            value='+'
+                            style={{margin: '0'}}
+                            onClick={this.props.onClick}>
+                    <FontAwesomeIcon icon={faArrowAltCircleRight} className="icon"/>
+                    </button>
+                </span>
             </div>
         )
     }

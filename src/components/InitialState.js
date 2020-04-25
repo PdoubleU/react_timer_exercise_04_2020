@@ -1,4 +1,4 @@
-const initialState = {
+const initialSate = {
     brkLength: 5,
     sesLength: 25,
     timerState: 'stopped',
@@ -7,5 +7,4 @@ const initialState = {
     intervalID: '',
     alarmColor: {color: 'white'}
 }
-
-export default initialState;
+export default initialSate;
