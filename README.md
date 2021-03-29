@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ![GitHub Logo](/images/timer.bmp)
 
 
-[Lets go to live preview](https://github.com/PdoubleU/react_timer_exercise_04_2020)
+[Lets go to live preview](https://pdoubleu.github.io/react_timer_exercise_04_2020/)
 
 
 Pomodoro clock implementation using React library. Application allows users to set the timer for activities like learnig or cooking.
