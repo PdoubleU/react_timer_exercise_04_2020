@@ -2,7 +2,7 @@
   "name": "pomodoroclock",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/PdoubleU/react_timer_exercise_04_2020",
+  "homepage": "https://pdoubleu.github.io/react_timer_exercise_04_2020",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
