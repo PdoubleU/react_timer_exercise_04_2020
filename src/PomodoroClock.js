@@ -32,6 +32,8 @@ class PomodoroClock extends React.Component {
   }
   resetState(){
     clearInterval(this.state.intervalID);
+    this.audio.pause();
+    this.audio.currentTime = 0;
     this.setState(initialState);
   }
   stopStart(){
@@ -40,6 +42,7 @@ class PomodoroClock extends React.Component {
     (this.setState({timerState: 'running'}), this.countDown()
     ) : (clearInterval(this.state.intervalID),
     this.setState({timer: this.state.timer, timerState: 'stopped'}))
+
   }
   countDown() {
     this.setState({
@@ -54,7 +57,7 @@ class PomodoroClock extends React.Component {
   }
   phaseControl() {
     this.warningColors(this.state.timer);
-    if (this.state.timer < 2) this.alarm();
+    if (this.state.timer === 0) this.alarm();
     if (this.state.timer < 0) {
       // eslint-disable-next-line no-unused-expressions
       this.state.timerType === 'Session' ? (
